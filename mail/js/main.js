@@ -37,13 +37,17 @@ const richiestaMail = prompt('Inserisci la tua mail');
 for (let i = 0; i <= listaMail.length - 1; i++){
   
   if( richiestaMail == listaMail[i] ){
-    console.log(`La mail: ${listaMail[i]} è stata accettata.`);
-  }
-
-  else{
-    console.log('email non valida');
+    let mailAccettata = listaMail[i];
+    console.log(mailAccettata);
   }
 
 }
+
+if( mailAccettata == listaMail[i] ){
+  console.log(`La mail: ${mailAccettata} è stata accettata.`);
+} else{
+   console.log('email non valida');
+}
+
 
 
