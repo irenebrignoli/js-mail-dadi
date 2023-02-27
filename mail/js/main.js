@@ -34,19 +34,21 @@ let listaMail = ['gigi.rossi@evviva.it', 'mario.bianchi@oiboi.com', 'bianca.verd
 
 const richiestaMail = prompt('Inserisci la tua mail');
 
+let mailTrovata;
+
 for (let i = 0; i <= listaMail.length - 1; i++){
   
   if( richiestaMail == listaMail[i] ){
-    let mailAccettata = listaMail[i];
-    console.log(mailAccettata);
+    mailTrovata = listaMail[i];
+    console.log(`Mail inserita: ${mailTrovata}`);
   }
 
 }
 
-if( mailAccettata == listaMail[i] ){
-  console.log(`La mail: ${mailAccettata} è stata accettata.`);
-} else{
-   console.log('email non valida');
+if( mailTrovata == richiestaMail){
+  console.log(`La mail: ${mailTrovata} è stata accettata.`);
+}else{
+   console.log('Email non valida');
 }
 
 
