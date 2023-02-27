@@ -20,5 +20,30 @@ Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 ** BONUS: Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina. **
 */
 
+
+/* cosa farei:
+ho una lista di email.
+chiedo la mail all'utente.
+scorro la lista
+    se la mail è diversa da elemento lista.
+    se l'ho trovata ok.
+    altrimenti messaggio di errore.
+*/
+
+let listaMail = ['gigi.rossi@evviva.it', 'mario.bianchi@oiboi.com', 'bianca.verdi@lala.com'];
+
 const richiestaMail = prompt('Inserisci la tua mail');
+
+for (let i = 0; i <= listaMail.length - 1; i++){
+  
+  if( richiestaMail == listaMail[i] ){
+    console.log(`La mail: ${listaMail[i]} è stata accettata.`);
+  }
+
+  else{
+    console.log('email non valida');
+  }
+
+}
+
 
